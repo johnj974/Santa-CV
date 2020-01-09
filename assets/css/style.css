@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body{
     margin: 0;
     padding: 0;
-    font-family: "Josefin-Sans";
+    font-family: "Roboto";
 }
 
 
 h1{
     color: red;
-    font-family: "Josefin-Sans";
+    font-family: "Roboto";
 
 }
 
