@@ -3,12 +3,14 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Josefin-Sans";
 }
 
 
 h1{
     color: red;
     font-family: "Josefin-Sans";
+
 }
 
 .landing {
@@ -38,3 +40,27 @@ h1{
     background-size: cover;
 }
 
+.sliders {
+    height:500px;
+    background-color:red;
+    font-size:36px;
+}
+
+.title {
+    text-align: center;
+    color:black;
+    padding-top: 400px;
+}
+
+.navbar {
+    background-color: green;
+}
+
+.top {
+padding: 0;
+}
+
+.fa-candy-cane{
+    color:red;
+    font-size: 200%;
+}
