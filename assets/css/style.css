@@ -44,13 +44,12 @@ h1{
  .content {
     height:400px;
     background-color:red;
-    font-size:36px;
-}
+    
 
- .foot {
+ /*.foot {
     height:348px;
     background-color:red;
-    font-size:36px;
+    font-size:36px;*/
 }
 
 .title {
@@ -77,6 +76,7 @@ padding: 0;
     height:10%;
     font-size: 150%;
     text-align: center;
+    padding-top: 10px;
 }
 
 ul{
@@ -87,7 +87,29 @@ ul{
     display: inline;
     padding-left: 10%;
     padding-right: 10%;
+  
+    
 }
 
+.about{
+    margin-left: 20%;
+    margin-top: 4%;
+}
 
+.history{
+    margin-left: 20%;
+    font-size: 20px;
+}
 
+i{
+    color: whitesmoke;
+}
+
+.skill{
+    margin-top: 4%;
+}
+
+.skills{
+    margin-right: 20%;
+    font-size: 20px;
+}
