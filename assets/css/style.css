@@ -44,6 +44,7 @@ h1{
  .content {
     height:400px;
     background-color:red;
+    text-align: center;
     
 
  /*.foot {
@@ -112,4 +113,8 @@ i{
 .skills{
     margin-right: 20%;
     font-size: 20px;
+}
+
+#countdown{
+    font-size: 30px;
 }

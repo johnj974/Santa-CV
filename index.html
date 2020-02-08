@@ -26,6 +26,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Skills</a>
       </li>
+      <li>
+        <div id="clock"></div>
+      </li>
     </ul>
   </div>
 </nav>
@@ -41,7 +44,7 @@
 
 <div class = "container-fluid content">
     <div class = "row">
-        <div class =  "col-8">
+        <div class =  "col-8 col-12-sm">
             <h2 class="about">About</h2>
                 <P class = "history">
                 I Specialize in High-precision, High-volume distribution of innovative new products, delivered globally every
@@ -57,7 +60,7 @@
 </div>
 
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<div class="parallax2">
+<div class="container-fluid parallax2">
 </div>
 <div class = "container-fluid content">
     <div class = "row">
@@ -77,14 +80,15 @@
 
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<div class="parallax3"></div>
+<div class="container-fluid parallax3"></div>
 <div class = "container-fluid content foot">
     <div class = "row">
         <div class = "col">
             <p>about</p>
         </div>
         <div class = "col">
-            <p>more about</p>
+            <p>Time until next delivery</p>
+            <p id = "countdown"></p>
         </div>
         <div class = "col">
             <p>some more about</p>
@@ -103,6 +107,6 @@
         </div>
     </div>
 </div>
-
+<script src ="javascript/script.js"></script>
 </body>
 </html>
