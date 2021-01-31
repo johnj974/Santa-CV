@@ -1,120 +1,134 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto";
-    color: whitesmoke;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  color: whitesmoke;
 }
 
-
-h1{
-    color: red;
-    font-family: "Roboto";
-
+h1 {
+  color: red;
+  font-family: "Roboto";
 }
 
 .landing {
-    background-image: url("/assets/img/bgimg1.jpg");
-    min-height: 100vh; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("/assets/img/bgimg1.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax2 {
-    background-image: url("/assets/img/bgimg2.jpg");
-    min-height: 500px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("/assets/img/bgimg2.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax3 {
-    background-image: url("/assets/img/bgimg3.jpg");
-    min-height: 500px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("/assets/img/bgimg3.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
- .content {
-    height:400px;
-    background-color:red;
-    text-align: center;
-    
+.content {
+  height: 400px;
+  background-color: red;
+  /* text-align: center; */
 
- /*.foot {
+  /*.foot {
     height:348px;
     background-color:red;
     font-size:36px;*/
 }
 
 .title {
-    text-align: center;
-    color:black;
-    padding-top: 400px;
+  text-align: center;
+  color: black;
+  padding-top: 400px;
 }
 
 .navbar {
-    background-color: green;
+  background-color: green;
 }
 
 .top {
-padding: 0;
+  padding: 0;
 }
 
-.fa-candy-cane{
-    color:red;
-    font-size: 200%;
+.fa-candy-cane {
+  color: red;
+  font-size: 200%;
 }
 
-.footer{
-    background-color: green;
-    height:10%;
-    font-size: 150%;
-    text-align: center;
-    padding-top: 10px;
+.footer {
+  background-color: green;
+  height: 10%;
+  font-size: 150%;
+  text-align: center;
+  padding-top: 10px;
 }
 
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
-.social li{
-    display: inline;
-    padding-left: 10%;
-    padding-right: 10%;
-  
-    
+.social li {
+  display: inline;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.about{
-    margin-left: 20%;
-    margin-top: 4%;
+.about {
+  margin-left: 20%;
+  margin-top: 4%;
 }
 
-.history{
-    margin-left: 20%;
-    font-size: 20px;
+.history {
+  margin-left: 20%;
+  font-size: 20px;
 }
 
-i{
-    color: whitesmoke;
+.skill {
+  margin-top: 4%;
 }
 
-.skill{
-    margin-top: 4%;
+.skills {
+  margin-right: 20%;
+  font-size: 20px;
 }
 
-.skills{
-    margin-right: 20%;
-    font-size: 20px;
+#countdown {
+  font-size: 30px;
 }
 
-#countdown{
-    font-size: 30px;
+@media only screen and (max-width: 992px) {
+  .about,
+  .history {
+    margin-left: 0%;
+  }
+  .skills {
+    margin-right: 0%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .history,
+  .skills {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .landing {
+    min-height: 75vh;
+  }
 }
