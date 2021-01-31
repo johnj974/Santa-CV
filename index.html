@@ -20,37 +20,42 @@
   </head>
   <body>
     <!--------------------------------------------------------------------navbar------------------------------------------------------------------------------------------------------->
-    <div class="container-fluid top">
-      <nav class="navbar navbar-expand-lg navbar-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="fas fa-candy-cane"></i></a>
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#"><i class="fas fa-candy-cane"></i></a>
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >About Me <span class="sr-only">(current)</span></a
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#first-info-panel"
+                >Skills</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#second-info-panel">Secondary</a>
             </li>
-            <li>
-              <div id="clock"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="#third-info-panel">Information</a>
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+
     <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div class="container-fluid landing">
       <div class="title">
@@ -60,7 +65,7 @@
     </div>
     <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <div class="container-fluid content">
+    <div class="container-fluid content" id="first-info-panel">
       <div class="row">
         <div class="col-lg-8">
           <h2 class="about">Skills</h2>
@@ -81,11 +86,11 @@
 
     <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div class="container-fluid parallax2"></div>
-    <div class="container-fluid content">
+    <div class="container-fluid content" id="second-info-panel">
       <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-8">
-          <h2 class="skill">Skills</h2>
+          <h2 class="skill">Secondary</h2>
           <p class="skills">
             I can land a troop of reindeer onto any roof<br />there is no
             building on earth that i cant get into. I am the current holder of
@@ -100,10 +105,10 @@
     <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="container-fluid parallax3"></div>
-    <div class="container-fluid content foot">
+    <div class="container-fluid content foot" id="third-info-panel">
       <div class="row">
         <div class="col">
-          <p>about</p>
+          <p>Information</p>
         </div>
         <div class="col">
           <p>Time until next delivery</p>
