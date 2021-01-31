@@ -10,6 +10,10 @@ body {
 h1 {
   color: red;
   font-family: "Roboto";
+  animation-name: hohoho;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .landing {
@@ -42,6 +46,7 @@ h1 {
 .content {
   height: 400px;
   background-color: red;
+
   /* text-align: center; */
 
   /*.foot {
@@ -64,9 +69,13 @@ h1 {
   padding: 0;
 }
 
-.fa-candy-cane {
-  color: rgb(255, 124, 1);
+.fa-sleigh {
+  color: rgb(18, 75, 18);
   font-size: 200%;
+  /* animation-name: hohoho;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
 }
 
 .footer {
@@ -138,5 +147,20 @@ ul {
 @media only screen and (max-width: 768px) {
   .landing {
     min-height: 75vh;
+  }
+}
+
+@keyframes hohoho {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: rgb(18, 75, 18);
+  }
+  100% {
+    color: rgb(255, 124, 1);
   }
 }
