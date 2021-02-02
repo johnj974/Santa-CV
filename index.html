@@ -80,10 +80,10 @@
             I specialize in covert entry and egress from all property types.I
             love working with and adapting to technologies as it develops and
             love to incorporate it into as much of my work as possible.<br /><br />
-            I love mince pies.
+            <!-- I love mince pies. -->
           </p>
         </div>
-        <div class="col-lg-4"></div>
+        <div class="col-lg-4 py-0"></div>
       </div>
     </div>
 
@@ -91,7 +91,7 @@
     <div class="container-fluid parallax2"></div>
     <div class="container-fluid content" id="second-info-panel">
       <div class="row">
-        <div class="col-lg-4"></div>
+        <div class="col-lg-4 py-0"></div>
         <div class="col-lg-8">
           <h2 class="skill">Secondary</h2>
           <p class="skills">
@@ -123,6 +123,16 @@
               aria-valuemax="100"
             ></div>
           </div>
+          <div class="progress mt-4">
+            <div
+              class="progress-bar progress-bar-animated progress-bar-striped orange-bar"
+              role="progressbar"
+              style="width: 100%"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
         </div>
       </div>
     </div>
@@ -134,7 +144,7 @@
       <div class="row text-center pt-3">
         <div class="col-md-4">
           <h3>The numbers</h3>
-          <h4>100% customer satisfaction</h4>
+          <h4 class="pt-2">100% customer satisfaction</h4>
           <h4>1000000 packages delivered</h4>
           <h4>100000000 miles traveled</h4>
           <h4>time till next delivery</h4>
@@ -142,16 +152,18 @@
         <div class="col-md-4 delivery">
           <h3>Next Delivery In</h3>
           <h4 id="countdown" class="pt-2 px-3"></h4>
+          <div class="northApp">
+            <h3>North Pole Weather</h3>
+            <h4 id="north-temp-main">0°</h4>
+            <h4 id="north-condition">unknown</h4>
+          </div>
           <h4 id="north-message"></h4>
         </div>
         <div class="col-md-4 weather">
           <h3>Your Weather</h3>
-          <div class="app">
-            <h3 id="temp-main">0°</h3>
+          <div class="app pt-2">
+            <h4 id="temp-main">0°</h4>
             <h4 id="condition">unknown</h4>
-            <h3>North Pole Weather</h3>
-            <h3 id="north-temp-main">0°</h3>
-            <h4 id="north-condition">unknown</h4>
           </div>
         </div>
       </div>
