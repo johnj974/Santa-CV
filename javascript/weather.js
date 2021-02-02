@@ -22,6 +22,18 @@ $(document).ready(function () {
       $("#temp-main").html(`${temp}°`);
       $("#condition").html(condition);
     });
+
+    let northLat = 90.0;
+    let northLong = 135.0;
+    let northURL = `http://api.openweathermap.org/data/2.5/onecall?lat=${northLat}&lon=${northLong}&appid=${API_KEY}`;
+
+    $.get(northURL, function (res) {
+      let northData = res.current;
+      let northTemp = Math.floor(northData.temp - 273);
+      let northCondition = northData.weather[0].description;
+      $("#north-temp-main").html(`${northTemp}°`);
+      $("#north-condition").html(northCondition);
+    });
   }
 
   getLocation();
