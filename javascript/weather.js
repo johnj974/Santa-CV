@@ -33,6 +33,13 @@ $(document).ready(function () {
       let northCondition = northData.weather[0].description;
       $("#north-temp-main").html(`${northTemp}°`);
       $("#north-condition").html(northCondition);
+      let message = "No weather data available";
+      if (northTemp > -30) {
+        message = "Perfect flying Conditions";
+      } else {
+        message = "Flying conditions not good";
+      }
+      $("#north-message").html(message);
     });
   }
 
