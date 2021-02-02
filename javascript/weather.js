@@ -1,3 +1,5 @@
+import { WEATHER_KEY } from "./key.js";
+
 $(document).ready(function () {
   function getLocation() {
     if (navigator.geolocation) {
@@ -10,7 +12,7 @@ $(document).ready(function () {
   function getWeather(position) {
     let lat = position.coords.latitude;
     let long = position.coords.longitude;
-    const API_KEY = "";
+    const API_KEY = WEATHER_KEY;
     let baseURL = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${API_KEY}`;
 
     $.get(baseURL, function (res) {
