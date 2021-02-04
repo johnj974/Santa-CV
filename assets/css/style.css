@@ -1,3 +1,4 @@
+/* -------------GENERAL LAYOUT----------- */
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 body {
@@ -7,23 +8,35 @@ body {
   color: whitesmoke;
 }
 
-.row {
-  height: 100%;
-}
-
-.col-lg-4 {
+/* -----------------NAVBAR------------------ */
+.navbar {
   background-color: green;
 }
 
-h1 {
-  color: red;
-  font-family: "Roboto";
+.fa-sleigh {
+  color: rgb(18, 75, 18);
+  font-size: 200%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.fa-gift {
+  color: rgb(255, 124, 1);
   animation-name: hohoho;
-  animation-duration: 8s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
+button.navbar-toggler {
+  border: none;
+}
+
+/* ---------------PARALLAX LAYOUT------------- */
 .landing {
   background-image: url("/assets/img/bgimg1.jpg");
   min-height: 100vh;
@@ -51,63 +64,57 @@ h1 {
   background-size: cover;
 }
 
+/* -----------CONTENT ROWS------------------ */
 .content {
   height: 400px;
   background-color: red;
+}
 
-  /* text-align: center; */
+.row {
+  height: 100%;
+}
 
-  /*.foot {
-    height:348px;
-    background-color:red;
-    font-size:36px;*/
+.col-lg-4 {
+  background-color: green;
+}
+
+/* ----------TEXT------------- */
+
+h1 {
+  color: red;
+  font-family: "Roboto";
+  animation-name: hohoho;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .title {
   text-align: center;
   color: black;
   padding-top: 400px;
+  position: relative;
 }
 
-.navbar {
-  background-color: green;
+.tracks {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  animation-name: moving;
+  animation-duration: 5s;
 }
 
-.top {
-  padding: 0;
+h4 {
+  font-size: 20px;
 }
 
-.fa-sleigh {
-  color: rgb(18, 75, 18);
-  font-size: 200%;
+#third-info-panel h3 {
+  color: green;
 }
 
-.footer {
-  background-color: green;
-  text-align: center;
-  margin: 0;
-  /* height: 10%;
-  font-size: 150%;
-  text-align: center;
-  padding-top: 10px; */
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-.social li {
-  display: inline;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.social li a {
-  color: rgb(255, 124, 1);
-}
-
+/* -------------CONTENT POSITIONING-------------- */
 .about {
   margin-left: 20%;
   margin-top: 4%;
@@ -127,9 +134,7 @@ ul {
   font-size: 20px;
 }
 
-/* #countdown {
-  font-size: 30px;
-} */
+/* ------------------MEDIA QUERY--------------- */
 
 @media only screen and (max-width: 992px) {
   .about,
@@ -142,10 +147,6 @@ ul {
   .col-lg-4 {
     background-color: red;
   }
-}
-
-h4 {
-  font-size: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -164,6 +165,25 @@ h4 {
   }
 }
 
+/* ----------------FOOTER--------------- */
+
+.footer {
+  background-color: green;
+  text-align: center;
+  margin: 0;
+}
+
+.social li {
+  display: inline;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.social li a {
+  color: rgb(255, 124, 1);
+}
+
+/* ---------------ANIMATIONS-------------- */
 @keyframes hohoho {
   0% {
     color: red;
@@ -179,22 +199,11 @@ h4 {
   }
 }
 
-.fa-gift {
-  color: rgb(255, 124, 1);
-  /* animation-name: hohoho;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; */
-}
-
-button.navbar-toggler {
-  border: none;
-}
-
-.orange-bar {
-  background-color: rgb(255, 124, 1);
-}
-
-#third-info-panel h3 {
-  color: green;
+@keyframes moving {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
