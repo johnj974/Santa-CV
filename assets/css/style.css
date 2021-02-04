@@ -74,7 +74,7 @@ button.navbar-toggler {
   height: 100%;
 }
 
-.col-lg-4 {
+.col-lg-4.green {
   background-color: green;
 }
 
@@ -84,7 +84,7 @@ h1 {
   color: red;
   font-family: "Roboto";
   animation-name: hohoho;
-  animation-duration: 8s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -125,15 +125,6 @@ h4 {
   font-size: 20px;
 }
 
-.skill {
-  margin-top: 4%;
-}
-
-.skills {
-  margin-right: 20%;
-  font-size: 20px;
-}
-
 /* ------------------MEDIA QUERY--------------- */
 
 @media only screen and (max-width: 992px) {
@@ -144,7 +135,7 @@ h4 {
   .skills {
     margin-right: 0%;
   }
-  .col-lg-4 {
+  .col-lg-4.green {
     background-color: red;
   }
 }
@@ -207,3 +198,12 @@ h4 {
     opacity: 1;
   }
 }
+
+/* .skill {
+  margin-top: 4%;
+}
+
+.skills {
+  margin-right: 20%;
+  font-size: 20px;
+} */
